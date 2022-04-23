@@ -8,10 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
 
 
-
-
-
-
       <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -26,7 +22,7 @@
 
 
     <!-- My css stylesheet-->
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/static/index_style.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
 
 
     <title>The National PAGA </title>
@@ -219,7 +215,7 @@
     ####################################################
     -->
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="position: relative; z-index: -1;margin-left: 33%; margin-top: 20px;">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="position: relative; z-index: -1;margin-left: 33%; margin-top: 20px; padding-top: 650px;">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="/static/event1.jpeg" class="d-block w-50" alt="...">
@@ -236,57 +232,55 @@
     <!-- /.carousel -->
 
 
-
-
-
+<!--Footer Navigation Bar for second option to navigate site -->
   <footer class="bd-footer py-5 mt-5 bg-light" style="position: relative; z-index: -1;">
-  <div class="container py-5">
+  <div class="container py-5" >
     <div class="row">
       <div class="col-lg-3 mb-3">
-        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="{{ url_for('index')}}" aria-label="Bootstrap">
           <img src="/static/footer_badge%20.jpg" class="d-block me-2">
           <span class="fs-5">Pan American Golf Association</span>
         </a>
         <ul class="list-unstyled small text-muted">
-          <li class="mb-2">© 2017 The National Pan American Golf Association <!--<a href="/docs/5.1/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>-->.</li>
+          <li class="mb-2">© 2017 The National Pan American Golf Association .</li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 offset-lg-1 mb-3">
         <h5>ABOUT</h5>
         <ul class="list-unstyled">
           <li class="mb-2"><a href="/">Mission & History </a></li>
-          <li class="mb-2"><a href="/docs/5.1/">National & History </a></li>
-          <li class="mb-2"><a href="/docs/5.1/examples/">NPAGA Admissions Chairman</a></li>
-          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Chapters</a></li>
-          <li class="mb-2"><a href="https://blog.getbootstrap.com/">Women's PAGA</a></li>
-          <li class="mb-2"><a href="https://blog.getbootstrap.com/">Junior's PAGA</a></li>
+          <li class="mb-2"><a href="/">National & History </a></li>
+          <li class="mb-2"><a href="/">NPAGA Admissions Chairman</a></li>
+          <li class="mb-2"><a href="/">Chapters</a></li>
+          <li class="mb-2"><a href="/">Women's PAGA</a></li>
+          <li class="mb-2"><a href="/">Junior's PAGA</a></li>
           <li class="mb-2"><a href="{{ url_for('menshalloffame')}}">Mens Hall OF Fame</a></li>
-          <li class="mb-2"><a href="https://blog.getbootstrap.com/">Aces Hall OF Fame</a></li>
+          <li class="mb-2"><a href="/">Aces Hall OF Fame</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
         <h5>EVENTS</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="/docs/5.1/getting-started/">Upcoming Events</a></li>
-          <li class="mb-2"><a href="/docs/5.1/examples/starter-template/">Tournament Results & Photos</a></li>
-          <li class="mb-2"><a href="/docs/5.1/getting-started/webpack/">National PAGA List</a></li>
+          <li class="mb-2"><a href="/">Upcoming Events</a></li>
+          <li class="mb-2"><a href="/">Tournament Results & Photos</a></li>
+          <li class="mb-2"><a href="/">National PAGA List</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
         <h5>CHAPTER MEDIA</h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap">SA PAGA</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Dallas PAGA</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/icons">New Braunfels PAGA</a></li>
+          <li class="mb-2"><a href="/">SA PAGA</a></li>
+          <li class="mb-2"><a href="/">Dallas PAGA</a></li>
+          <li class="mb-2"><a href="/">New Braunfels PAGA</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2 mb-3">
         <h5>PAGA RESOURCES </h5>
         <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Official Documents</a></li>
-          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Forms and Applications</a></li>
-          <li class="mb-2"><a href="https://github.com/sponsors/twbs">PAGA Archives</a></li>
-          <li class="mb-2"><a href="https://opencollective.com/bootstrap">Minimax Report Activities</a></li>
+          <li class="mb-2"><a href="/">Official Documents</a></li>
+          <li class="mb-2"><a href="/">Forms and Applications</a></li>
+          <li class="mb-2"><a href="/">PAGA Archives</a></li>
+          <li class="mb-2"><a href="/">Minimax Report Activities</a></li>
         </ul>
       </div>
     </div>

@@ -11,10 +11,9 @@ app = Flask(__name__)
 def index():  # put application's code here
     return render_template("index.html")
 
-@app.route('/menshalloffame')
+@app.route('/menshalloffame/')
 def menshalloffame(): # put application's code here
     return flask.render_template("menshalloffame.html")
-
 
 if __name__ == '__main__':
     app.run()
